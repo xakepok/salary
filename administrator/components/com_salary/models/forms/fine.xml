@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addrulepath="/administrator/components/com_salary/models/rules">
+    <fieldset name="names">
+        <field
+                name="id"
+                type="hidden"
+        />
+        <field
+                name="employer_id"
+                type="Employer"
+                label="COM_SALARY_FORM_EMPLOYER_FIO"
+                description="COM_SALARY_FORM_EMPLOYER_FIO_DESC"
+                required="true"
+                class="input-xlarge"
+        />
+        <field
+                name="fine_time"
+                type="calendar"
+                label="COM_SALARY_TABLE_FINES_TIME"
+                description="COM_SALARY_TABLE_FINES_TIME"
+                required="true"
+        />
+        <field
+                name="amount"
+                type="text"
+                label="COM_SALARY_TABLE_FINES_AMOUNT"
+                description="COM_SALARY_TABLE_FINES_AMOUNT"
+                required="true"
+                class="input-xlarge validate-salary"
+                validate="salary"
+                hint="1000"
+                autocomplete="off"
+        />
+        <field
+                name="comment"
+                type="text"
+                label="COM_SALARY_TABLE_FINES_COMMENT"
+                description="COM_SALARY_TABLE_FINES_COMMENT"
+                required="true"
+                class="input-xlarge"
+                hint="Курение на рабочем месте"
+                autocomplete="off"
+        />
+    </fieldset>
+</form>

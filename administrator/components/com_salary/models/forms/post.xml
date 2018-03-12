@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addrulepath="/administrator/components/com_salary/models/rules">
+    <fieldset name="names">
+        <field
+                name="id"
+                type="hidden"
+        />
+        <field
+                name="title"
+                type="text"
+                label="COM_SALARY_FORM_POST_TITLE"
+                description="COM_SALARY_FORM_POST_TITLE_DESCRIPTION"
+                required="true"
+                class="input-xlarge"
+                autocomplete="off"
+        />
+        <field
+                name="salary"
+                type="text"
+                label="COM_SALARY_FORM_POST_WAGE"
+                description="COM_SALARY_FORM_POST_WAGE_DESCRIPTION"
+                required="true"
+                class="input-xlarge validate-salary"
+                validate="salary"
+                hint="150.00"
+                autocomplete="off"
+        />
+    </fieldset>
+</form>

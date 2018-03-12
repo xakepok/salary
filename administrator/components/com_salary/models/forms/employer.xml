@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addrulepath="/administrator/components/com_salary/models/rules">
+    <fieldset name="names">
+        <field
+                name="id"
+                type="hidden"
+        />
+        <field
+                name="fio"
+                type="text"
+                label="COM_SALARY_FORM_EMPLOYER_FIO_SHORT"
+                description="COM_SALARY_FORM_EMPLOYER_FIO_DESC"
+                required="true"
+                class="input-xlarge"
+                hint="COM_SALARY_FORM_EMPLOYER_FIO_HINT"
+                autocomplete="off"
+        />
+        <field
+                name="dep_id"
+                type="Department"
+                label="COM_SALARY_DEPARTMENT_TITLE"
+                description="COM_SALARY_FORM_DEPARTMENT_TITLE_DESCRIPTION"
+                required="true"
+                class="input-xlarge"
+        />
+        <field
+                name="post_id"
+                type="Post"
+                label="COM_SALARY_FORM_POST_TITLE"
+                description="COM_SALARY_FORM_POST_TITLE_DESCRIPTION"
+                required="true"
+                class="input-xlarge"
+        />
+        <field
+                name="date_start"
+                type="calendar"
+                label="COM_SALARY_FORM_EMPLOYER_DS"
+                description="COM_SALARY_FORM_EMPLOYER_DS"
+                required="true"
+        />
+        <field
+                name="wage"
+                type="text"
+                label="COM_SALARY_FORM_POST_WAGE"
+                description="COM_SALARY_FORM_POST_WAGE_DESCRIPTION"
+                required="true"
+                class="input-xlarge validate-salary"
+                validate="salary"
+                hint="1.0"
+                autocomplete="off"
+        />
+    </fieldset>
+</form>
